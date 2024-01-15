@@ -1,0 +1,61 @@
+
+.after-navbar {
+  height: 150px;
+  width: 1600px;
+  background-color: #000;
+}
+
+body {
+/* font-family: Arial, sans-serif; */
+  margin: 0;
+  padding: 0;
+  background-color: #24292a;
+  height: 100vh;
+}
+
+
+img {
+  width: 200px;
+  height: 500px;
+}
+.backg {
+position: relative;
+height: 50vh;
+}
+.backg::before {
+  content: '';
+  background-image: url('../images/imagemen.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left:0;
+  bottom:0;
+  right:0;
+  opacity: 0.5;
+}
+.h1-1 {
+  font-size: 50px;
+  font-family: sans-serif;
+  text-align: center;
+  position: relative;
+  color: rgb(255, 218, 9)
+}
+.p1-1 {
+  font-size: 25px;
+  font-family: sans-serif;
+  text-align: center;
+  position: relative;
+}
+
+
+.footer-2 {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.footer-2 > a {
+  color:white
+}
+.footer-2 {
+  height: 10vh;
+}

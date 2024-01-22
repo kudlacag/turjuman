@@ -20,18 +20,21 @@ function Section() {
 
     </div>
     <div className="col-lg-4  p-5 bg-light text-dark">
-        <h4 className="text-center">About Us</h4>
+        <h4 className="text-center">Uber mich</h4>
         <img src={Somaliman}  class="rounded-circle img-fluid "  alt="Sawir" style={{width: '50%'}}/>
-      <p style={{width: '50%', float: 'right', marginTop: '50px', padding:'20px'}}>Our services are Translations and also consuling, reading the Big interview with Bundesamt and more Our services are Translations and also consuling, reading the Big interview with Bundesamt and more
-      <Link type="button" to="/services" className="btn btn-outline-primary d-block" style={{marginTop: '10px'}}>Read More...</Link></p>
+      <p style={{width: '50%', float: 'right', marginTop: '50px', padding:'20px'}}>
+Mit einer beeindruckenden Erfahrung seit 2015 als Dolmetscher verfüge ich über umfassende Kenntnisse in der sprachlichen Vermittlung.
+      <Link type="button" to="/about" className="btn btn-outline-primary d-block" style={{marginTop: '10px'}}>Read More...</Link></p>
 
 
     </div>
     <div className="col-lg-4  p-5 bg-light text-dark">
         <h4 className="text-center">Contact Us</h4>
         <img src={Contactus}  class="rounded-circle img-fluid "  alt="Sawir" style={{width: '50%'}}/>
-      <p style={{width: '50%', float: 'right', marginTop: '50px', padding:'20px'}}>Our services are Translations and also consuling, reading the Big interview with Bundesamt and more Our services are Translations and also consuling, reading the Big interview with Bundesamt and more
-      <Link type="button" to="/services" className="btn btn-outline-primary d-block" style={{marginTop: '10px'}}>Read More...</Link> </p>
+      <p style={{width: '50%', float: 'right', marginTop: '50px', padding:'20px'}}>
+
+      Auf meiner Kontaktseite stehen Ihnen verschiedene Möglichkeiten zur Verfügung, um mit mir in Verbindung zu treten. Nutzen Sie
+      <Link type="button" to="/contacts" className="btn btn-outline-primary d-block" style={{marginTop: '10px'}}>Read More...</Link> </p>
 
 
     </div>

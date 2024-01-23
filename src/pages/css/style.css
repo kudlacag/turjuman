@@ -24,7 +24,7 @@ height: 50vh;
 }
 .backg::before {
   content: '';
-  background-image: url('../images/imagemen.jpg');
+  background-image: url('../images/Ramadan.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

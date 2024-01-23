@@ -1,18 +1,17 @@
 {
   "files": {
-    "main.css": "/turjuman/static/css/main.bc0bdb18.css",
+    "main.css": "/turjuman/static/css/main.21392974.css",
     "main.js": "/turjuman/static/js/main.ff78df66.js",
     "static/media/Ramadan.jpg": "/turjuman/static/media/Ramadan.b33ed9a274472640703a.jpg",
     "static/media/services.jpg": "/turjuman/static/media/services.1586fb8191d9c60217ff.jpg",
-    "static/media/imagemen.jpg": "/turjuman/static/media/imagemen.e04f792fe25e78c33985.jpg",
     "static/media/contact.jpg": "/turjuman/static/media/contact.6c279835b52403657525.jpg",
     "static/media/somaliman.jpg": "/turjuman/static/media/somaliman.aa3813c77fc488418556.jpg",
     "index.html": "/turjuman/index.html",
-    "main.bc0bdb18.css.map": "/turjuman/static/css/main.bc0bdb18.css.map",
+    "main.21392974.css.map": "/turjuman/static/css/main.21392974.css.map",
     "main.ff78df66.js.map": "/turjuman/static/js/main.ff78df66.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc0bdb18.css",
+    "static/css/main.21392974.css",
     "static/js/main.ff78df66.js"
   ]
 }

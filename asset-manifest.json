@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/tujruman/static/css/main.b7540fce.css",
+    "main.js": "/tujruman/static/js/main.e76ffa5b.js",
+    "static/media/Ramadan.jpg": "/tujruman/static/media/Ramadan.b33ed9a274472640703a.jpg",
+    "static/media/services.jpg": "/tujruman/static/media/services.1586fb8191d9c60217ff.jpg",
+    "static/media/imagemen.jpg": "/tujruman/static/media/imagemen.e04f792fe25e78c33985.jpg",
+    "static/media/contact.jpg": "/tujruman/static/media/contact.6c279835b52403657525.jpg",
+    "static/media/somaliman.jpg": "/tujruman/static/media/somaliman.aa3813c77fc488418556.jpg",
+    "index.html": "/tujruman/index.html",
+    "main.b7540fce.css.map": "/tujruman/static/css/main.b7540fce.css.map",
+    "main.e76ffa5b.js.map": "/tujruman/static/js/main.e76ffa5b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7540fce.css",
+    "static/js/main.e76ffa5b.js"
+  ]
+}

@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.860033aa.css",
-    "main.js": "/static/js/main.f2d22e2c.js",
-    "static/media/Ramadan.jpg": "/static/media/Ramadan.b33ed9a274472640703a.jpg",
-    "static/media/services.jpg": "/static/media/services.1586fb8191d9c60217ff.jpg",
-    "static/media/contact.jpg": "/static/media/contact.6c279835b52403657525.jpg",
-    "static/media/somaliman.jpg": "/static/media/somaliman.aa3813c77fc488418556.jpg",
-    "index.html": "/index.html",
-    "main.860033aa.css.map": "/static/css/main.860033aa.css.map",
-    "main.f2d22e2c.js.map": "/static/js/main.f2d22e2c.js.map"
+    "main.css": "/turjuman/static/css/main.21392974.css",
+    "main.js": "/turjuman/static/js/main.ff78df66.js",
+    "static/media/Ramadan.jpg": "/turjuman/static/media/Ramadan.b33ed9a274472640703a.jpg",
+    "static/media/services.jpg": "/turjuman/static/media/services.1586fb8191d9c60217ff.jpg",
+    "static/media/contact.jpg": "/turjuman/static/media/contact.6c279835b52403657525.jpg",
+    "static/media/somaliman.jpg": "/turjuman/static/media/somaliman.aa3813c77fc488418556.jpg",
+    "index.html": "/turjuman/index.html",
+    "main.21392974.css.map": "/turjuman/static/css/main.21392974.css.map",
+    "main.ff78df66.js.map": "/turjuman/static/js/main.ff78df66.js.map"
   },
   "entrypoints": [
-    "static/css/main.860033aa.css",
-    "static/js/main.f2d22e2c.js"
+    "static/css/main.21392974.css",
+    "static/js/main.ff78df66.js"
   ]
 }

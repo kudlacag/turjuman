@@ -22,7 +22,7 @@ Auf meiner Kontaktseite stehen Ihnen verschiedene Möglichkeiten zur Verfügung,
               <span class="material-symbols-outlined mt-5" style={{fontSize: '48px'}}>call</span>
              <h5 className='p-3'>Telefon</h5>
              <p className='p-2'>Die Unten genannte Handynummer, können sie in jederzeit erreichen</p>
-             <p className='p-2 text-info '> <mark className='p-4'> <a href="tel:+49 1762 2135443"></a> +49 1762 2135443</mark> </p>
+             <p className='p-2 text-info '> <mark className='p-4'> <a href="tel:+49 1762 2135443">+49 1762 2135443</a></mark> </p>
             </div>
 
             <div className="col-lg-6 text-center text-dark bg-light border rounded   " style={{ }}>

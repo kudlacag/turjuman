@@ -29,7 +29,7 @@ Mit einer beeindruckenden Erfahrung seit 2015 als Dolmetscher verfüge ich über
 
     </div>
     <div className="col-lg-4  p-5 bg-light text-dark">
-        <h4 className="text-center">Contact Us</h4>
+        <h4 className="text-center">Kontakt</h4>
         <img src={Contactus}  class="rounded-circle img-fluid "  alt="Sawir" style={{width: '50%'}}/>
       <p style={{width: '50%', float: 'right', marginTop: '50px', padding:'20px'}}>
 

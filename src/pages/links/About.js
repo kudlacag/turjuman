@@ -6,7 +6,7 @@ function About() {
       <div className="mt-2 container ">
         <div class="container mt-3">
           <div className="bg-dark p-3">
-            <h1 className="text-white text-center">Uber mich</h1>
+            <h1 className="text-white text-center">Über Mich</h1>
             <h5 className="text-white my-3 text-center">
               Erfahrener Dolmetscher mit über zehntausend Einsatzstunden
             </h5>
@@ -14,7 +14,7 @@ function About() {
           <img
             class="d-block w-100 mx-auto "
             src={Sawir}
-            alt="Sawir"
+            alt="Somalische Dolmetscher"
             style={styling}
           />
           <p className="text-white bg-dark p-3 ">

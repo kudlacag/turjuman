@@ -7,10 +7,10 @@ function Services() {
       <div className="mt-2 container ">
         <div class="container mt-3">
           <div className="bg-dark p-3">
-            <h1 className="text-white text-center">Dolmetscher Beratung für Flüchtlingsfragen</h1>
+            <h3 className="text-white text-center">Dolmetscher Beratung für Flüchtlingsfragen</h3>
 
           </div>
-          <img class="d-block w-100" src={Service} alt="service" />
+          <img class="d-block w-100" src={Service} alt="Somalischer Dolmetscher" />
           <p className="text-white bg-dark p-3 ">
           Dolmetscher Beratung für Flüchtlingsfragen
 

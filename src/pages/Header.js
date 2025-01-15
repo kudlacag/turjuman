@@ -15,13 +15,13 @@ function Header() {
                 <Link className="nav-link" to="/">Home</Link>
             </li>
             <li className="nav-item">
-                <Link className="nav-link" to="/services">Services</Link>
+                <Link className="nav-link" to="/">Services</Link>
             </li>
             <li className="nav-item">
-                <Link className="nav-link" to="/about">About Us</Link>
+                <Link className="nav-link" to="/">About Us</Link>
             </li>
             <li className="nav-item">
-                <Link className="nav-link" to="/contacts">Contacts</Link>
+                <Link className="nav-link" to="/">Contacts</Link>
             </li>
         </ul>
     </div>

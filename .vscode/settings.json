@@ -1,0 +1,7 @@
+{
+    "files.autoSave": "afterDelay",
+    "emmet.syntaxProfiles": {
+        "javascript": "jsx"
+    },
+    "emmet.showSuggestionsAsSnippets": true
+}

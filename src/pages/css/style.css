@@ -1,46 +1,68 @@
-
+body {
+  /* font-family: Arial, sans-serif; */
+  margin: 0;
+  padding: 0;
+  background-color: #24292a;
+  height: 100vh;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 .after-navbar {
   height: 150px;
   width: 1600px;
   background-color: #000;
 }
-
-body {
-/* font-family: Arial, sans-serif; */
-  margin: 0;
-  padding: 0;
-  background-color: #24292a;
-  height: 100vh;
+.bg-private {
+  position: relative;
+  width: 30vh;
 }
-
-
-img {
-  width: 200px;
-  height: 500px;
-}
-.backg {
-position: relative;
-height: 50vh;
-}
-.backg::before {
-  content: '';
-  background-image: url('../images/Ramadan.jpg');
+.bg-private::before {
+  content: "";
+  background-image: url("../images/contactus.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: absolute;
   top: 0;
-  left:0;
-  bottom:0;
-  right:0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.9;
+}
+
+img {
+  max-width: 200px;
+  height: 500px;
+  /* width: 80%;
+  margin-right: 10px;
+  float: left;
+  clear: both; */
+}
+.backg {
+  position: relative;
+  height: 50vh;
+}
+.backg::before {
+  content: "";
+  background-image: url("../images/Ramadan.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   opacity: 0.5;
 }
+
+/* FOOTER */
 .h1-1 {
   font-size: 50px;
   font-family: sans-serif;
   text-align: center;
   position: relative;
-  color: rgb(255, 218, 9)
+  color: rgb(255, 218, 9);
 }
 .p1-1 {
   font-size: 25px;
@@ -49,13 +71,87 @@ height: 50vh;
   position: relative;
 }
 
-
 .footer-2 {
   background-color: rgba(0, 0, 0, 0.05);
 }
 .footer-2 > a {
-  color:white
+  color: #ffffff;
 }
 .footer-2 {
   height: 10vh;
+}
+
+.footer {
+  background-color: #010203;
+  padding: 20px;
+}
+
+.content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.links-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.links-list li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.links-list a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.links-list a:hover {
+  text-decoration: underline;
+}
+
+/* SECTION IN HOMEJS WITH TREE PARAGRAPH */
+.three-row-section {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  row-gap: 20px;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.row-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row-image {
+  width: 150px;
+  height: auto;
+}
+
+.row-text {
+  margin-top: 10px;
+  font-size: 16px;
+}
+.three-row-section {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  row-gap: 20px;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
 }

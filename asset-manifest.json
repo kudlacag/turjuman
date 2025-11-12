@@ -1,17 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.860033aa.css",
-    "main.js": "/static/js/main.31551b05.js",
-    "static/media/Ramadan.jpg": "/static/media/Ramadan.b33ed9a274472640703a.jpg",
-    "static/media/services.jpg": "/static/media/services.1586fb8191d9c60217ff.jpg",
-    "static/media/contact.jpg": "/static/media/contact.6c279835b52403657525.jpg",
-    "static/media/somaliman.jpg": "/static/media/somaliman.aa3813c77fc488418556.jpg",
+    "main.css": "/static/css/main.8074ddf6.css",
+    "main.js": "/static/js/main.6909c66f.js",
     "index.html": "/index.html",
-    "main.860033aa.css.map": "/static/css/main.860033aa.css.map",
-    "main.31551b05.js.map": "/static/js/main.31551b05.js.map"
+    "main.8074ddf6.css.map": "/static/css/main.8074ddf6.css.map",
+    "main.6909c66f.js.map": "/static/js/main.6909c66f.js.map"
   },
   "entrypoints": [
-    "static/css/main.860033aa.css",
-    "static/js/main.31551b05.js"
+    "static/css/main.8074ddf6.css",
+    "static/js/main.6909c66f.js"
   ]
 }

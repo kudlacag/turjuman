@@ -16,19 +16,6 @@ body {
   position: relative;
   width: 30vh;
 }
-.bg-private::before {
-  content: "";
-  background-image: url("../images/contactus.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0.9;
-}
 
 img {
   max-width: 200px;
@@ -41,19 +28,6 @@ img {
 .backg {
   position: relative;
   height: 50vh;
-}
-.backg::before {
-  content: "";
-  background-image: url("../images/Ramadan.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0.5;
 }
 
 /* FOOTER */

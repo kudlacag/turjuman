@@ -2,7 +2,7 @@ import React from "react";
 import "../css/style.css";
 import Landing from "./Landing";
 import Section from "./Section";
-import Three from "./Three";
+
 
 function Home() {
   return (
@@ -13,8 +13,6 @@ function Home() {
 
       <Section />
 
-      {/* three rows */}
-      <Three />
     </div>
   );
 }

@@ -1,32 +1,39 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-function Header() {
-  return (
-    <nav className="navbar navbar-expand-lg bg-dark navbar-dark" >
-        <span class="material-symbols-outlined" style={{fontSize: '30px', marginRight: '20px', color: '#FFD700'}}>interpreter_mode</span>
-    <Link className="navbar-brand" to="/">
-      Somalische <span style={{color: '#FFD700'}}>Dolmetscher</span> </Link>
-    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav ml-auto">
-            <li className="nav-item">
-                <Link className="nav-link" to="/">Home</Link>
-            </li>
-            <li className="nav-item">
-                <Link className="nav-link" to="/">Services</Link>
-            </li>
-            <li className="nav-item">
-                <Link className="nav-link" to="/">About Us</Link>
-            </li>
-            <li className="nav-item">
-                <Link className="nav-link" to="/">Contacts</Link>
-            </li>
-        </ul>
-    </div>
-</nav>
-  )
-}
+// components/Header.js
+import React, { useState } from 'react';
+import './Header.css'
 
-export default Header
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  return (
+    <header className="header">
+      <div className="container">
+        <div className="logo">
+          <h1>Somalische Dolmetscher</h1>
+          <p>Professionelle Übersetzungsdienste</p>
+        </div>
+        
+        <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
+          <button 
+            className="mobile-menu-btn"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            ☰
+          </button>
+          
+          <ul className="nav-links">
+            <li><a href="#home">Startseite</a></li>
+            <li><a href="#services">Dienstleistungen</a></li>
+            <li><a href="#about">Über Uns</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+            <li className="cta-button">
+              <a href="#contact" className="btn-primary">Jetzt Buchen</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  );
+};
+
+export default Header;

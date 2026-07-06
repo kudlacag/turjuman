@@ -30,7 +30,7 @@ const Header = () => {
   <li>
     {/* CRITICAL STRUCTURAL FIX FOR HASHROUTER PAGE TARGETING */}
     <a 
-      href="/#/visa-service" 
+      href="/#visa-service" 
       onClick={() => setIsMenuOpen(false)}
       style={{ color: '#25D366', fontWeight: 'bold' }}
     >

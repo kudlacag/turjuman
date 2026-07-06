@@ -18,12 +18,11 @@ function App() {
         <Header />
 
         <Routes>
-          {/* 1. Specific sub-page component route */}
-          <Route path="/visa-service" element={<EthiopiaVisa />} />
+  {/* Keeps path clean here; HashRouter appends the parent window hash automatically */}
+  <Route path="/visa-service" element={<EthiopiaVisa />} />
+  <Route path="*" element={<Home />} />
+</Routes>
 
-          {/* 2. Fallback landing homepage component view */}
-          <Route path="*" element={<Home />} />
-        </Routes>
         
         <Footer />
       </HashRouter>

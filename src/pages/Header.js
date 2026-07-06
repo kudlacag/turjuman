@@ -28,17 +28,17 @@ const Header = () => {
   <li><a href="/#about" onClick={() => setIsMenuOpen(false)}>Über Uns</a></li>
   <li><a href="/#contact" onClick={() => setIsMenuOpen(false)}>Kontakt</a></li>
   <li>
-    {/* FORCED LIVE ROUTE REDIRECT ATTR UPDATE */}
- <a 
-  href="/#/visa-service" 
-  onClick={() => setIsMenuOpen(false)}
-  style={{ color: '#25D366', fontWeight: 'bold' }}
->
-  ✈️ Äthiopien Visa Service
-</a>
-
+    {/* CRITICAL ROUTE FIX: Added the hash back into the URL string path */}
+    <a 
+      href="https://somalische-dolmetscher.de" 
+      onClick={() => setIsMenuOpen(false)}
+      style={{ color: '#25D366', fontWeight: 'bold' }}
+    >
+      ✈️ Äthiopien Visa Service
+    </a>
   </li>
 </ul>
+
 
 
 

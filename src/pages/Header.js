@@ -1,5 +1,6 @@
 // components/Header.js
 import React, { useState } from 'react';
+import {Link} from 'react-router-dom';
 // import {HashLink} from 'react-router-hash-link'; 
 import './Header.css'
 
@@ -29,13 +30,13 @@ const Header = () => {
   <li><a href="/#contact" onClick={() => setIsMenuOpen(false)}>Kontakt</a></li>
   <li>
     {/* CRITICAL STRUCTURAL FIX FOR HASHROUTER PAGE TARGETING */}
-    <a 
-      href="/#visa-service" 
-      onClick={() => setIsMenuOpen(false)}
-      style={{ color: '#25D366', fontWeight: 'bold' }}
-    >
-      ✈️ Äthiopien Visa Service
-    </a>
+   <Link 
+          to="/visa-service" 
+          onClick={() => setIsMenuOpen(false)}
+          style={{ color: '#25D366', fontWeight: 'bold', textDecoration: 'none' }}
+        >
+          ✈️ Äthiopien Visa Service
+        </Link>
   </li>
 </ul>
 

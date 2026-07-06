@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import "../css/style.css";
 import Landing from "./Landing";
 import Section from "./Section";
-import EthiopiaVisa from './EthiopiaVisaSection'
+
 
 function Home() {
   const location = useLocation();
@@ -25,7 +25,7 @@ function Home() {
   return (
     <div>
       {/* LANDINGPAGE */}
-      <EthiopiaVisa />
+    
       <Landing />
       {/* Section */}
       <Section />

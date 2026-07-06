@@ -19,7 +19,7 @@ function App() {
 
         <Routes>
   {/* Keeps path clean here; HashRouter appends the parent window hash automatically */}
-  {/* <Route path="/visa-service" element={<EthiopiaVisa />} /> */}
+  <Route path="/visa-service" element={<EthiopiaVisa />} />
   <Route path="*" element={<Home />} />
 </Routes>
 

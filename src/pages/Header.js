@@ -29,13 +29,14 @@ const Header = () => {
   <li><a href="/#contact" onClick={() => setIsMenuOpen(false)}>Kontakt</a></li>
   <li>
     {/* FORCED LIVE ROUTE REDIRECT ATTR UPDATE */}
-    <a 
-      href="https://www.somalische-dolmetscher.de/visa-service" 
-      onClick={() => setIsMenuOpen(false)}
-      style={{ color: '#25D366', fontWeight: 'bold' }}
-    >
-      ✈️ Äthiopien Visa Service
-    </a>
+ <a 
+  href="/#/visa-service" 
+  onClick={() => setIsMenuOpen(false)}
+  style={{ color: '#25D366', fontWeight: 'bold' }}
+>
+  ✈️ Äthiopien Visa Service
+</a>
+
   </li>
 </ul>
 

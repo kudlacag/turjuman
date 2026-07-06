@@ -1,6 +1,6 @@
 // components/Header.js
 import React, { useState } from 'react';
-import {HashLink} from 'react-router-hash-Link'; 
+// import {HashLink} from 'react-router-hash-link'; 
 import './Header.css'
 
 const Header = () => {
@@ -22,35 +22,24 @@ const Header = () => {
             ☰
           </button>
           
-   <ul className="nav-links">
-  <li><a href="#home" onClick={() => setIsMenuOpen(false)}>Startseite</a></li>
-  <li><a href="#services" onClick={() => setIsMenuOpen(false)}>Dienstleistungen</a></li>
-  <li><a href="#about" onClick={() => setIsMenuOpen(false)}>Über Uns</a></li>
-  <li><a href="#contact" onClick={() => setIsMenuOpen(false)}>Kontakt</a></li>
-  
- {/* Absolute path routing update inside Header.js */}
-<li><HashLink 
-  smooth 
-  to="#visa-service" 
-  onClick={() => setIsMenuOpen(false)}
-  style={{ 
-    color: '#25D366', 
-    fontWeight: 'bold', 
-    display: 'flex', 
-    alignItems: 'center', 
-    gap: '6px',
-    padding: '10px 0',
-    width: '100%' 
-  }}
->
-  ✈️ Äthiopien Visa Service
-</HashLink>
-</li>
-
-  <li className="cta-button">
-    <a href="#contact" onClick={() => setIsMenuOpen(false)} className="btn-primary">Jetzt Buchen</a>
+<ul className="nav-links">
+  <li><a href="/#home" onClick={() => setIsMenuOpen(false)}>Startseite</a></li>
+  <li><a href="/#services" onClick={() => setIsMenuOpen(false)}>Dienstleistungen</a></li>
+  <li><a href="/#about" onClick={() => setIsMenuOpen(false)}>Über Uns</a></li>
+  <li><a href="/#contact" onClick={() => setIsMenuOpen(false)}>Kontakt</a></li>
+  <li>
+    <a 
+      href="/visa-service" 
+      onClick={() => setIsMenuOpen(false)}
+      style={{ color: '#25D366', fontWeight: 'bold' }}
+    >
+      ✈️ Äthiopien Visa Service
+    </a>
   </li>
 </ul>
+
+
+
 
 
         </nav>

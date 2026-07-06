@@ -14,15 +14,14 @@ function App() {
     <Header />
 
    <Routes>
+        {/* 1. Put specific sub-pages FIRST so React can read them */}
+        <Route path="/visa-service" element={<EthiopiaVisa />} />
 
-    <Route path='*' element={<Home /> } />
-
-     
-    {/* <Route path='/services' element={ <Services />} /> */}
-    <Route path="/visa-service" element={<EthiopiaVisa />} />
-    
-    </Routes>
-   <Footer />
+        {/* 2. Put your fallback / landing page at the bottom of the list */}
+        <Route path="*" element={<Home />} />
+      </Routes>
+      
+      <Footer />
     </div>
   );
 }

@@ -4,8 +4,7 @@ export default function EthiopiaVisaSection() {
     const phoneNumber = +4917630633777;
 
     // This image path assumes your picture is inside your project's "public/assets/" folder
-    // Example file location: your-project/public/assets/ethiopia-visa-service.jpg
-    const visaImage = process.env.PUBLIC_URL + '/assets/ethiopia-visa-service.jpg'
+    const visaImage = process.env.PUBLIC_URL + '/assets/ethiopia-visa-service.jpg';
 
     // URL-encoded Somali greeting message that automatically pre-fills on the user's phone
     const encodedMessage = encodeURIComponent(
@@ -15,10 +14,23 @@ export default function EthiopiaVisaSection() {
 
     return (
         <section id="visa-service" style={styles.section}>
-            <div style={styles.container}>
+            {/* Added an inject style block to support side-by-side view on large screens */}
+            <style>{`
+                @media (min-width: 768px) {
+                    .visa-flex-container {
+                        flex-direction: row !important;
+                        align-items: center !important;
+                    }
+                    .visa-flex-side {
+                        width: 50% !important;
+                    }
+                }
+            `}</style>
+            
+            <div className="visa-flex-container" style={styles.container}>
 
-                {/* TEXT CONTENT COLUMN (Rendered first for mobile reading hierarchy) */}
-                <div style={styles.textSide}>
+                {/* TEXT CONTENT COLUMN */}
+                <div className="visa-flex-side" style={styles.textSide}>
                     <span style={styles.tag}>Dhammaystirka & xareynta Visaha Onlineka</span>
                     <h2 style={styles.heading}>
                         Caawinaadda <strong>Visaha Onlineka ee Itoobiya</strong> (eVisa)
@@ -72,7 +84,7 @@ export default function EthiopiaVisaSection() {
                 </div>
 
                 {/* IMAGE COLUMN */}
-                <div style={styles.imageSide}>
+                <div className="visa-flex-side" style={styles.imageSide}>
                     <div style={styles.imageWrapper}>
                         <img
                             src={visaImage}
@@ -101,10 +113,11 @@ export default function EthiopiaVisaSection() {
     );
 }
 
-// --- CLEAN, COMPILED MOBILE-FIRST INLINE STYLES ---
+// --- UPDATED STYLES WITH FIXED NAVIGATION PADDING ---
 const styles = {
     section: {
-        padding: '45px 16px',
+        /* FIXED: Increased top padding significantly so the text pushes down away from the header menu layout */
+        padding: '120px 16px 60px 16px',
         backgroundColor: '#f4f8f5',
         fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
         color: '#2b2d42',
@@ -114,7 +127,7 @@ const styles = {
         margin: '0 auto',
         display: 'flex',
         flexDirection: 'column',
-        gap: '30px',
+        gap: '40px',
     },
     textSide: {
         width: '100%',
@@ -129,13 +142,13 @@ const styles = {
         marginBottom: '8px',
     },
     heading: {
-        fontSize: '26px',
+        fontSize: '32px', /* Increased size for cleaner headline visibility */
         lineHeight: '1.25',
         margin: '0 0 14px 0',
         letterSpacing: '-0.5px',
     },
     description: {
-        fontSize: '15px',
+        fontSize: '16px',
         lineHeight: '1.5',
         color: '#4a4e69',
         margin: '0 0 24px 0',
@@ -161,14 +174,14 @@ const styles = {
         lineHeight: '1',
     },
     featureTitle: {
-        fontSize: '15px',
+        fontSize: '16px',
         color: '#1d3557',
         display: 'block',
         marginBottom: '2px',
     },
     featureText: {
         margin: 0,
-        fontSize: '13.5px',
+        fontSize: '14px',
         color: '#6c757d',
         lineHeight: '1.4',
     },
@@ -176,6 +189,7 @@ const styles = {
         display: 'flex',
         flexDirection: 'column',
         gap: '12px',
+        marginBottom: '20px',
     },
     btnWhatsapp: {
         backgroundColor: '#25D366',
@@ -213,7 +227,7 @@ const styles = {
     mainImg: {
         width: '100%',
         height: 'auto',
-        maxHeight: '240px',
+        maxHeight: '380px', /* Increased height room for desktops */
         borderRadius: '12px',
         objectFit: 'cover',
         boxShadow: '0 6px 15px rgba(0,0,0,0.06)',

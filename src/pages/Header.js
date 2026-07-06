@@ -21,15 +21,27 @@ const Header = () => {
             ☰
           </button>
           
-          <ul className="nav-links">
-            <li><a href="#home">Startseite</a></li>
-            <li><a href="#services">Dienstleistungen</a></li>
-            <li><a href="#about">Über Uns</a></li>
-            <li><a href="#contact">Kontakt</a></li>
-            <li className="cta-button">
-              <a href="#contact" className="btn-primary">Jetzt Buchen</a>
-            </li>
-          </ul>
+   <ul className="nav-links">
+  <li><a href="#home" onClick={() => setIsMenuOpen(false)}>Startseite</a></li>
+  <li><a href="#services" onClick={() => setIsMenuOpen(false)}>Dienstleistungen</a></li>
+  <li><a href="#about" onClick={() => setIsMenuOpen(false)}>Über Uns</a></li>
+  <li><a href="#contact" onClick={() => setIsMenuOpen(false)}>Kontakt</a></li>
+  
+ {/* Absolute path routing update inside Header.js */}
+<li><a 
+    href="#visa-service" 
+    onClick={() => setIsMenuOpen(false)}
+  >
+    ✈️ Äthiopien Visa Service
+  </a>
+</li>
+
+  <li className="cta-button">
+    <a href="#contact" onClick={() => setIsMenuOpen(false)} className="btn-primary">Jetzt Buchen</a>
+  </li>
+</ul>
+
+
         </nav>
       </div>
     </header>

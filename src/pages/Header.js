@@ -1,5 +1,6 @@
 // components/Header.js
 import React, { useState } from 'react';
+import {HashLink} from 'react-router-hash-Link'; 
 import './Header.css'
 
 const Header = () => {
@@ -28,12 +29,22 @@ const Header = () => {
   <li><a href="#contact" onClick={() => setIsMenuOpen(false)}>Kontakt</a></li>
   
  {/* Absolute path routing update inside Header.js */}
-<li><a 
-    href="#visa-service" 
-    onClick={() => setIsMenuOpen(false)}
-  >
-    ✈️ Äthiopien Visa Service
-  </a>
+<li><HashLink 
+  smooth 
+  to="#visa-service" 
+  onClick={() => setIsMenuOpen(false)}
+  style={{ 
+    color: '#25D366', 
+    fontWeight: 'bold', 
+    display: 'flex', 
+    alignItems: 'center', 
+    gap: '6px',
+    padding: '10px 0',
+    width: '100%' 
+  }}
+>
+  ✈️ Äthiopien Visa Service
+</HashLink>
 </li>
 
   <li className="cta-button">

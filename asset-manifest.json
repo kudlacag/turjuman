@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/turjuman/static/css/main.252b0923.css",
-    "main.js": "/turjuman/static/js/main.547004c5.js",
-    "index.html": "/turjuman/index.html",
-    "main.252b0923.css.map": "/turjuman/static/css/main.252b0923.css.map",
-    "main.547004c5.js.map": "/turjuman/static/js/main.547004c5.js.map"
+    "main.css": "/static/css/main.252b0923.css",
+    "main.js": "/static/js/main.df278240.js",
+    "index.html": "/index.html",
+    "main.252b0923.css.map": "/static/css/main.252b0923.css.map",
+    "main.df278240.js.map": "/static/js/main.df278240.js.map"
   },
   "entrypoints": [
     "static/css/main.252b0923.css",
-    "static/js/main.547004c5.js"
+    "static/js/main.df278240.js"
   ]
 }

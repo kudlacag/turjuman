@@ -5,7 +5,7 @@
     <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-  npm npgit
+    
     <meta property="og:description" content="*DESCRIPTION*" />
     <meta
       name="description"
@@ -37,23 +37,43 @@
     <meta property="og:site_name" content="Ramadan Ahmed">
     <meta property="og:site_name" content="xasanjii">
 
-
-
-         <!-- Bootstrap -->
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <!-- icons google cdn -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
     <title>Somalische Dolmetscher || Somalische Übersetzer in München</title>
+
+    <!-- START OF GITHUB PAGES SINGLE-PAGE APPLICATION ROUTER REDIRECT SCRIPT -->
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search[1] === '_' && l.search[2] === 'p' && l.search[3] === '=') {
+          var d = {};
+          l.search.slice(1).split('&').forEach(function(q) {
+            var res = q.split('=');
+            d[res[0]] = res.slice(1).join('=').replace(/~and~/g, '&');
+          });
+          if (d._p !== undefined) {
+            window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + (d._p ? '/' + d._p : '') +
+              (d._q ? ('?' + d._q) : '') +
+              l.hash
+            );
+          }
+        }
+      }(window.location));
+    </script>
+    <!-- END OF REDIRECT SCRIPT -->
+
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
 
-
     <!-- Bootstrap JS and dependencies (jQuery and Popper.js) -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   </body>
 </html>
